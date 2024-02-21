@@ -29,4 +29,7 @@ public class ChatGptResponse {
 
     private List<ChatGptChoice> choices;
 
+    public String getAnswer() {
+        return choices.get(0).getMessage().getContent();
+    }
 }
